@@ -1,5 +1,5 @@
 include env_make
-NS = mcroth
+NS = umayr
 VERSION ?= latest
 
 REPO = docker-janus
