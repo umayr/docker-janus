@@ -166,6 +166,9 @@ RUN \
     && rm -rf /usr/share/doc/* \
     && rm -rf /var/lib/apt/*
 
+RUN mkdir -p /opt/janus/recording
+RUN chown janus:janus /opt/janus/recording
+
 USER janus
 
 CMD ["/opt/janus/bin/janus"]
